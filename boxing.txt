@@ -1,0 +1,5 @@
+// const = jumpRope (this.hitpoints && this.strength = i++ hitpoints && strength)
+    // const = mouthPiece (jumpRope i++ (hitpoints && strength))
+    // const = gloves (mouthPiece i++ (hitpoints && strength))
+    // const = speedBag (gloves i++ (hitpoints && strength))
+    // const = heavyBag (gloves i++ (hitpoints && strength))

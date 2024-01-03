@@ -26,33 +26,59 @@ class Character {
   // Method which takes in a second object and decreases their "hitPoints" by this character's strength
   attack(opponent) {
     console.log(`${this.name} hit ${opponent.name} for ${this.strength}`);
+
+// Here is when we add the other cards. Figure out how to add the cards to the to this function.
+
     opponent.hitPoints -= this.strength;
   }
 }
 
 // Creates two unique characters using the "character" constructor
-const grace = new Character('Grace', 30, 75);
-const dijkstra = new Character('Dijkstra', 20, 105);
+const grappler = new Character('grappler', 30, 75);
+const pugilist = new Character('pugilist', 20, 105);
+
 
 // This keeps track of whose turn it is
-let graceTurn = true;
+let grapplerTurn = true;
 
-grace.printStats();
-dijkstra.printStats();
+grappler.printStats();
+pugilist.printStats();
 
 const turnInterval = setInterval(() => {
   // If either character is not alive, end the game
-  if (!grace.isAlive() || !dijkstra.isAlive()) {
+  if (!grappler.isAlive() || !pugilist.isAlive())
+    
+  // Here is another spot we can add the cards. Figure out how to add the cards to the to this function.
+
+  
+  {
     clearInterval(turnInterval);
     console.log('Game over!');
-  } else if (graceTurn) {
-    grace.attack(dijkstra);
-    dijkstra.printStats();
-  } else {
-    dijkstra.attack(grace);
-    grace.printStats();
-  }
+    
+    // Here is another spot we can add the cards. Figure out how to add the cards to the to this function.
 
-  // Switch turns
-  graceTurn = !graceTurn;
+  } else if (grapplerTurn) {
+    grappler.attack(pugilist);
+    pugilist.printStats();
+
+// Here is another spot we can add the cards. Figure out how to add the cards to the to this function.
+  
+  } else {
+    pugilist.attack(grappler);
+    grappler.printStats();
+  }
+    // Here is another spot we can add the cards. Figure out how to add the cards to the to this function.
+
+  // Switch turns     // Here is another spot we can add the cards. Figure out how to add the cards to the to this function.
+
+  grapplerTurn = !grapplerTurn;
 }, 2000);
+
+// switch (key) {
+//   case value:
+    
+//     break;
+
+//   default:
+//     break;
+// }
